@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Студия маникюра, стрижек и загара — проспект Елизарова, 14</title>
+<meta name="description" content="Маникюр, стрижки, солярий, брови и ресницы, косметология и эпиляция на проспекте Елизарова, 14. Ежедневно с 9:00 до 22:00 по записи.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--plum:#3b1f3a;--plum-2:#5a2f57;--apricot:#f2a46b;--sun:#ffd7a8;--cream:#fff8f1;--ink:#2a1a29;--muted:#7a6577;--line:#ecdcd6;
+--display:"Unbounded",system-ui,sans-serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+a{color:inherit}
+.demo{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:8px 16px}
+.demo b{color:var(--sun)}
+.in{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.2;color:var(--plum)}
+.logo small{display:block;font-family:var(--body);font-weight:500;font-size:12px;color:var(--muted)}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:500}
+.navlinks a{text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:13px 22px;font-size:15px}
+.btn.main{background:var(--plum);color:#fff}.btn.main:hover{background:var(--plum-2)}
+.btn.ghost{border:1.5px solid var(--plum);color:var(--plum)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,var(--sun) 0%,var(--apricot) 32%,var(--plum-2) 72%,var(--plum) 100%);color:#fff}
+.hero .in{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding-block:72px 64px;align-items:end}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,5vw,54px);line-height:1.08;margin:0 0 18px;text-wrap:balance}
+.hero p{font-size:18px;max-width:46ch;margin:0 0 28px;opacity:.92}
+.hero .btn.main{background:#fff;color:var(--plum)}
+.hero .btn.ghost{border-color:#fff;color:#fff}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.card{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:22px;backdrop-filter:blur(6px)}
+.rating{font-family:var(--display);font-size:46px;line-height:1}
+.rating span{font-size:20px;opacity:.8}
+.card ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;font-size:15px}
+section{padding-block:72px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,36px);line-height:1.15;margin:0 0 10px;color:var(--plum);text-wrap:balance}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.svc h3{margin:0;font-size:19px;color:var(--plum)}
+.svc ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.svc .price{margin-top:auto;font-weight:700;color:var(--plum-2);font-size:15px}
+.ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--sun),var(--apricot));display:grid;place-items:center;font-family:var(--display);color:var(--plum);font-weight:700}
+.band{background:var(--plum);color:#fff}
+.band h2{color:#fff}.band .lead{color:#e8d6e4}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.why b{display:block;font-family:var(--display);font-size:28px;color:var(--sun);margin-bottom:6px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:14px}
+.box .phone{font-family:var(--display);font-size:22px;color:var(--plum);text-decoration:none}
+.msgr{display:flex;flex-wrap:wrap;gap:10px}
+.note{font-size:13px;color:var(--muted)}
+footer{padding-block:28px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom));background:var(--cream);border-top:1px solid var(--line);display:none;gap:10px;z-index:5}
+.sticky .btn{flex:1;justify-content:center;padding:12px}
+@media (max-width:820px){.hero .in,.contact{grid-template-columns:1fr}.navlinks{display:none}section{padding-block:52px}.sticky{display:flex}body{padding-bottom:72px}}
+a:focus-visible{outline:2px solid var(--apricot);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="demo"><b>Демо-версия сайта</b> · подготовлено для студии на пр. Елизарова, 14 · фото работ и полный прайс добавим из ваших материалов</div>
+
+<header class="in"><nav>
+  <div class="logo">Маникюр, стрижки и загар<small>проспект Елизарова, 14</small></div>
+  <div class="navlinks"><a href="#uslugi">Услуги</a><a href="#pochemu">Почему мы</a><a href="#kontakty">Контакты</a></div>
+  <a class="btn main" href="https://wa.me/79119242875" target="_blank" rel="noopener">Записаться</a>
+</nav></header>
+
+<div class="hero"><div class="in">
+  <div>
+    <h1>Ногти, волосы, загар и уход за лицом — в одной студии у дома</h1>
+    <p>Маникюр и педикюр, стрижки и окрашивание, солярий, брови и ресницы, косметология и эпиляция. Каждый день с 9:00 до 22:00.</p>
+    <div class="cta">
+      <a class="btn main" href="https://wa.me/79119242875" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn ghost" href="https://t.me/+79119242875" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="rating">4,9 <span>/ 5</span></div>
+    <div>504 отзыва в 2ГИС</div>
+    <ul><li>Ежедневно 9:00–22:00</li><li>Запись заранее, без очередей</li><li>Wi-Fi для гостей, можно с собакой</li></ul>
+  </div>
+</div></div>
+
+<section id="uslugi"><div class="in">
+  <h2>Услуги</h2>
+  <p class="lead">Всё, что обычно приходится искать по трём разным салонам. Точные цены и мастера появятся здесь после согласования прайса.</p>
+  <div class="grid">
+    <div class="svc"><div class="ic">01</div><h3>Маникюр и педикюр</h3><ul><li>Аппаратный маникюр, гель-лак</li><li>Наращивание гелем и акрилом</li><li>Мужской и детский маникюр</li><li>Педикюр, парафиновые ванночки</li></ul><div class="price">Цена — по прайсу студии</div></div>
+    <div class="svc"><div class="ic">02</div><h3>Стрижки и волосы</h3><ul><li>Женские, мужские, детские стрижки</li><li>Сложное окрашивание</li><li>Кератин, ботокс, нанопластика</li><li>Стрижка горячими ножницами</li></ul><div class="price">Женская стрижка от 1 200 ₽ · мужская от 1 000 ₽</div></div>
+    <div class="svc"><div class="ic">03</div><h3>Загар</h3><ul><li>Вертикальный солярий</li><li>Турбосолярий</li><li>Коллагенарий</li></ul><div class="price">Цена — по прайсу студии</div></div>
+    <div class="svc"><div class="ic">04</div><h3>Брови и ресницы</h3><ul><li>Наращивание и ламинирование ресниц</li><li>Коррекция и окрашивание бровей</li><li>Ламинирование бровей</li></ul><div class="price">Цена — по прайсу студии</div></div>
+    <div class="svc"><div class="ic">05</div><h3>Косметология</h3><ul><li>Чистка лица, пилинги</li><li>Аппаратная и лазерная косметология</li><li>Массаж лица</li><li>Удаление татуировок и перманента</li></ul><div class="price">Цена — по прайсу студии</div></div>
+    <div class="svc"><div class="ic">06</div><h3>Эпиляция и пирсинг</h3><ul><li>Лазерная, фото-, восковая эпиляция</li><li>Шугаринг</li><li>Прокол ушей, пирсинг</li></ul><div class="price">Цена — по прайсу студии</div></div>
+  </div>
+</div></section>
+
+<section class="band" id="pochemu"><div class="in">
+  <h2>Почему к нам возвращаются</h2>
+  <p class="lead">Больше пятисот отзывов — это клиенты, которые ходят годами и приводят друзей.</p>
+  <div class="why">
+    <div><b>4,9</b>Средняя оценка по 504 отзывам в 2ГИС</div>
+    <div><b>9–22</b>Без выходных: удобно до и после работы</div>
+    <div><b>6 в 1</b>Ногти, волосы, загар, брови, лицо и эпиляция в одном месте</div>
+  </div>
+</div></section>
+
+<section id="kontakty"><div class="in contact">
+  <div>
+    <h2>Как нас найти</h2>
+    <p class="lead" style="margin-bottom:18px">Санкт-Петербург, проспект Елизарова, 14</p>
+    <table class="hours" aria-label="Часы работы">
+      <tr><td>Понедельник — пятница</td><td>9:00–22:00</td></tr>
+      <tr><td>Суббота — воскресенье</td><td>9:00–22:00</td></tr>
+      <tr><td>Приём</td><td>по предварительной записи</td></tr>
+    </table>
+    <p><a class="btn ghost" href="https://2gis.ru/spb/firm/5348552839991591" target="_blank" rel="noopener">Открыть на карте</a></p>
+  </div>
+  <div class="box">
+    <div class="note">Телефон</div>
+    <a class="phone" href="tel:+79119242875">+7 911 924-28-75</a>
+    <div class="msgr">
+      <a class="btn main" href="https://wa.me/79119242875" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn ghost" href="https://t.me/+79119242875" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn ghost" href="https://vk.ru/ledielizarova19" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+    <div class="note">Оплата наличными или по QR-коду.</div>
+  </div>
+</div></section>
+
+<footer><div class="in">Студия маникюра, стрижек и загара · проспект Елизарова, 14, Санкт-Петербург · Демо-версия сайта</div></footer>
+<div class="sticky"><a class="btn main" href="https://wa.me/79119242875" target="_blank" rel="noopener">Записаться</a><a class="btn ghost" href="tel:+79119242875">Позвонить</a></div>
+</body>
+</html>
