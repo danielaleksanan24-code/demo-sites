@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goodlak — ногтевая студия на канале Грибоедова, 22</title>
+<meta name="description" content="Маникюр, педикюр, гель-лак, наращивание, брови и ресницы в центре Петербурга. Ногтевая студия Goodlak, канал Грибоедова, 22. Ежедневно 10:00–22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800&family=Golos+Text:wght@400;500;700&display=swap">
+<style>
+:root{--lac:#b5172a;--lac2:#8e1020;--blush:#fbeeee;--paper:#fffafa;--ink:#1d1416;--muted:#7a6266;--line:#f0dcdc;
+--display:"Rubik",system-ui,sans-serif;--body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+a{color:inherit}
+.demo{background:var(--ink);color:var(--blush);font-size:13px;text-align:center;padding:8px 16px}
+.in{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:800;font-size:26px;color:var(--lac);letter-spacing:-.02em}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:500}.navlinks a{text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:13px 24px;font-size:15px}
+.btn.r{background:var(--lac);color:#fff}.btn.r:hover{background:var(--lac2)}
+.btn.o{border:1.5px solid var(--ink)}
+.hero .in{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;padding-block:44px 72px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,6vw,66px);line-height:1;margin:0 0 18px;letter-spacing:-.03em;text-wrap:balance}
+.hero h1 span{color:var(--lac)}
+.hero p{font-size:18px;color:var(--muted);max-width:42ch;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.art{position:relative;aspect-ratio:1/1;max-width:100%;border-radius:40% 40% 18px 18px;background:radial-gradient(circle at 30% 25%,#e2485b 0%,var(--lac) 40%,var(--lac2) 100%);display:grid;place-items:end start;padding:28px;color:#fff;overflow:hidden}
+.art::before{content:"";position:absolute;width:46%;height:58%;right:12%;top:12%;border-radius:50% 50% 14px 14px;background:rgba(255,255,255,.16)}
+.art b{font-family:var(--display);font-weight:800;font-size:64px;line-height:1;position:relative}
+.art span{position:relative;display:block;font-size:15px;opacity:.9}
+section{padding-block:68px}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.6vw,40px);line-height:1.1;margin:0 0 10px;letter-spacing:-.02em;text-wrap:balance}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.svc h3{font-family:var(--display);margin:0 0 10px;font-size:20px;color:var(--lac)}
+.svc ul{margin:0;padding-left:18px;color:var(--ink)}
+.svc .p{margin-top:12px;font-size:14px;color:var(--muted)}
+.band{background:var(--blush)}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.three b{display:block;font-family:var(--display);font-weight:800;font-size:30px;color:var(--lac)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:14px}
+.ph{font-family:var(--display);font-weight:800;font-size:24px;text-decoration:none}
+.msgr{display:flex;flex-wrap:wrap;gap:10px}
+.small{font-size:13px;color:var(--muted)}
+footer{padding-block:26px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line);display:none;gap:10px;z-index:5}
+.sticky .btn{flex:1}
+@media (max-width:820px){.hero .in,.contact{grid-template-columns:1fr}.navlinks{display:none}section{padding-block:50px}.sticky{display:flex}body{padding-bottom:72px}.art{aspect-ratio:16/10}}
+a:focus-visible{outline:2px solid var(--lac);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта для Goodlak · фото работ мастеров и прайс добавим из ваших материалов</div>
+
+<header class="in"><nav>
+  <div class="logo">goodlak</div>
+  <div class="navlinks"><a href="#uslugi">Услуги</a><a href="#pochemu">Почему мы</a><a href="#kontakty">Контакты</a></div>
+  <a class="btn r" href="https://t.me/goodlak_nevsky" target="_blank" rel="noopener">Записаться</a>
+</nav></header>
+
+<div class="hero"><div class="in">
+  <div>
+    <h1>Маникюр в самом центре — <span>в двух шагах от Невского</span></h1>
+    <p>Ногтевая студия на канале Грибоедова. Маникюр и педикюр, гель-лак, наращивание, брови и ресницы. Каждый день с 10:00 до 22:00.</p>
+    <div class="cta">
+      <a class="btn r" href="https://t.me/goodlak_nevsky" target="_blank" rel="noopener">Записаться в Telegram</a>
+      <a class="btn o" href="https://wa.me/79959886187" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="art"><div><b>5,0</b><span>235 отзывов в 2ГИС · подтверждённый рейтинг</span></div></div>
+</div></div>
+
+<section id="uslugi"><div class="in">
+  <h2>Услуги</h2>
+  <p class="lead">Цены и длительность процедур подставим из вашего прайса.</p>
+  <div class="grid">
+    <div class="svc"><h3>Маникюр</h3><ul><li>Аппаратный маникюр</li><li>Покрытие гель-лаком</li><li>Наращивание гелем</li><li>Мужской маникюр</li></ul><div class="p">Цена — по прайсу студии</div></div>
+    <div class="svc"><h3>Педикюр</h3><ul><li>Женский педикюр</li><li>Мужской педикюр</li></ul><div class="p">Цена — по прайсу студии</div></div>
+    <div class="svc"><h3>Брови и ресницы</h3><ul><li>Наращивание и LED-наращивание ресниц</li><li>Ламинирование ресниц и бровей</li><li>Коррекция и окрашивание</li></ul><div class="p">Цена — по прайсу студии</div></div>
+  </div>
+</div></section>
+
+<section class="band" id="pochemu"><div class="in">
+  <h2>Почему Goodlak</h2>
+  <p class="lead">235 гостей оставили отзыв, и средняя оценка — пять из пяти.</p>
+  <div class="three">
+    <div><b>5,0 ★</b>Подтверждённый рейтинг в 2ГИС</div>
+    <div><b>Центр</b>Канал Грибоедова, удобно после работы и прогулки</div>
+    <div><b>10–22</b>Каждый день, без выходных</div>
+  </div>
+</div></section>
+
+<section id="kontakty"><div class="in contact">
+  <div>
+    <h2>Как нас найти</h2>
+    <p class="lead" style="margin-bottom:18px">Санкт-Петербург, набережная канала Грибоедова, 22. Ежедневно с 10:00 до 22:00.</p>
+    <div class="msgr"><a class="btn o" href="https://2gis.ru/spb/firm/70000001041469014" target="_blank" rel="noopener">Открыть на карте</a><a class="btn o" href="https://2gis.ru/spb/firm/70000001041469014/tab/reviews" target="_blank" rel="noopener">Отзывы</a></div>
+  </div>
+  <div class="box">
+    <div class="small">Телефон для записи</div>
+    <a class="ph" href="tel:+79959886187">+7 995 988-61-87</a>
+    <div class="msgr">
+      <a class="btn r" href="https://t.me/goodlak_nevsky" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn o" href="https://wa.me/79959886187" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn o" href="https://vk.ru/goodlak.nails" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+    <div class="small">Оплата наличными, переводом или по QR-коду.</div>
+  </div>
+</div></section>
+
+<footer><div class="in">Goodlak, ногтевая студия · набережная канала Грибоедова, 22, Санкт-Петербург · Демо-версия сайта</div></footer>
+<div class="sticky"><a class="btn r" href="https://t.me/goodlak_nevsky" target="_blank" rel="noopener">Записаться</a><a class="btn o" href="tel:+79959886187">Позвонить</a></div>
+</body>
+</html>
